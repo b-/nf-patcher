@@ -1,0 +1,17 @@
+name: patch-briosevka
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  patch-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.3.0
+      - run: sudo apt-get install -y fontforge
+      - run: ./do-it.sh
+      - run: tar -zcvf briosk-patched.tgz out/*
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: briosk-patched
+          files: briosk-patched.tgz
