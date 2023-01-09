@@ -8,5 +8,5 @@ cd nerd-fonts
 #--use-cpus-instead-of-cores 
 for flagset in '-c -w' '-c -w -s' '-c -s' ;
 do
- find ../dist/briosk/ttf -not -type d -print0 | parallel -0 -v  -u "fontforge -script ./font-patcher --careful $flagset {} -o ../out"
+ find ../dist/briosk/ttf -not -type d -print0 | parallel -0 -v  -u "fontforge -script ./font-patcher --careful --makegroups $flagset {} -o ../out"
 done
