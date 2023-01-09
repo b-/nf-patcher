@@ -14,5 +14,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: briosk-patched
-          files: briosk-patched.tgz
+          tag_name: briosk-nf
+          files: briosk-nf.tgz
