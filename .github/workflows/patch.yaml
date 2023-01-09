@@ -22,8 +22,11 @@ jobs:
             bin/scripts/name_parser
       - run: ./do-it.sh
       - run: tar -zcvf briosk-patched.tgz out/*
+      - run: zip -r briosk-patched.zip out/*
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: briosk-patched
-          files: briosk-patched.tgz
+          files: |
+            briosk-patched.tgz
+            briosk-patched.zip
