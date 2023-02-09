@@ -1,7 +1,7 @@
 #!/bin/bash -eux
 
 [ ! -d nerd-fonts ] && ./get-nf-patcher.sh # download patcher if we don't have it
-[ ! -d dist ] && curl -L https://github.com/b-/Iosevka/releases/download/v0.1/fonts.tgz | tar -zxv
+[ ! -d dist ] && curl -L https://github.com/b-/Iosevka/releases/download/briosk/fonts.tgz | tar -zxv
 
 rm -fr out
 cd nerd-fonts
