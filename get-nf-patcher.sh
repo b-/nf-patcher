@@ -8,7 +8,7 @@
 #cd nerd-fonts && git checkout HEAD src font-patcher
 
 FONTPATCHER_ZIP=https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
-FONTPATCHER_ZIP=https://github.com/b-/nerd-fonts/raw/add-zipcmp/FontPatcher.zip
+#FONTPATCHER_ZIP=https://github.com/b-/nerd-fonts/raw/add-zipcmp/FontPatcher.zip
 
 mkdir nerd-fonts
 cd nerd-fonts
